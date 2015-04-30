@@ -47,6 +47,6 @@ importer(function(nouns, verbs, adjs) {
     res.send(results.join('\n'));
   });
   app.use(new serveStatic('./public'));
-  app.listen(8000);
+  app.listen(config.port);
   console.log('Server started');
 });
