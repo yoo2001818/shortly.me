@@ -1,0 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+body {
+  font-family: "Noto Sans", NanumGothic, "나눔고딕", "Malgun Gothic", "맑은 고딕", sans-serif;
+}
+
+#results {
+  margin: 10pt;
+  white-space: pre;
+  border-radius: 6pt;
+  padding: 10pt;
+  background-color: #eee;
+}

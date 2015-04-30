@@ -1,0 +1,18 @@
+{
+  "database": "mongodb://localhost/test",
+  "port": 1337,
+  "dictionary": {
+    "directory": "dict",
+    "index": {
+      "adj": "index.adj",
+      "noun": "index.noun",
+      "verb": "index.verb"
+    },
+    "list": {
+      "type": "file",
+      "adj": "list.adj",
+      "noun": "list.noun",
+      "verb": "list.verb"
+    }
+  }
+}

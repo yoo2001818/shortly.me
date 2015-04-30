@@ -1,0 +1,25 @@
+{
+  "name": "MemoryShortener",
+  "version": "0.0.1",
+  "description": "Easily memorable URL shortener",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoo2001818/MemoryShortener.git"
+  },
+  "author": "Kkiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yoo2001818/MemoryShortener/issues"
+  },
+  "homepage": "https://github.com/yoo2001818/MemoryShortener",
+  "dependencies": {
+    "carrier": "^0.1.14",
+    "express": "^4.12.3",
+    "mongoose": "^4.0.2",
+    "serve-static": "^1.9.2"
+  }
+}
