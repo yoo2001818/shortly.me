@@ -29,15 +29,15 @@ importer(function(nouns, verbs, adjs) {
       results.push(patterns.map(function(v) {
         switch(v) {
           case 'a':
-            return getRand(adjs).word;
+            return getRand(adjs);
           case 'n':
-            return getRand(nouns).word;
+            return getRand(nouns);
           case 'v':
-            return getRand(verbs).word;
+            return getRand(verbs);
           case 'V':
-            return toIngVerb(getRand(verbs).word);
+            return toIngVerb(getRand(verbs));
           case 'w':
-            return to3rdVerb(getRand(verbs).word);
+            return to3rdVerb(getRand(verbs));
           default:
             return 'unknown';
         }

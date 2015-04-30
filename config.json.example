@@ -7,12 +7,6 @@
       "adj": "index.adj",
       "noun": "index.noun",
       "verb": "index.verb"
-    },
-    "list": {
-      "type": "file",
-      "adj": "list.adj",
-      "noun": "list.noun",
-      "verb": "list.verb"
     }
   }
 }
