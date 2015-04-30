@@ -8,5 +8,14 @@
       "noun": "index.noun",
       "verb": "index.verb"
     }
+  },
+  "generator": {
+    "patterns": [
+      "an",
+      "anV",
+      "nVn",
+      "anVn",
+      "anVan"
+    ]
   }
 }

@@ -1,5 +1,6 @@
 var config = require('./lib/config.js');
 var importer = require('./lib/importer.js');
+var db = require('./lib/db.js');
 var express = require('express');
 var serveStatic = require('serve-static');
 
