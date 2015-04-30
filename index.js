@@ -7,26 +7,15 @@ function toIngVerb(word) {
   if(/(ss|x|ch|sh|o)$/.test(word)) return word+'es';
   if(/y$/.test(word)) return word.slice(0, -1)+'ies';
   return word+'s';
-  /*if(/e$/.test(word)) return word.slice(0, -1)+'ing';
-  return word+'ing';*/
 }
 
 function to3rdVerb(word) {
-  /*if(/(ss|x|ch|sh|o)$/.test(word)) return word+'es';
-  if(/y$/.test(word)) return word.slice(0, -1)+'ies';
-  return word+'s';*/
   if(/e$/.test(word)) return word.slice(0, -1)+'ing';
   return word+'ing';
 }
 
 function getRand(arr) {
   return arr[arr.length * Math.random() | 0];
-}
-
-function testWords() {
-  for(var i = 0; i < 10; ++i) {
-    console.log(getRand(adjs).word, getRand(nouns).word);
-  }
 }
 
 var app = express();
