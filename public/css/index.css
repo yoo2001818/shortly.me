@@ -2,12 +2,98 @@
 
 body {
   font-family: "Noto Sans", NanumGothic, "나눔고딕", "Malgun Gothic", "맑은 고딕", sans-serif;
+  text-align: center;
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+  font-size: 12pt;
 }
 
-#results {
-  margin: 10pt;
-  white-space: pre;
-  border-radius: 6pt;
+a {
+  color: #333;
+}
+
+#header {
+  padding: 20pt 0;
+  background-color: #fff;
+  border-bottom: 1px #999 solid;
+}
+
+#content {
+  margin: 0 auto;
+  max-width: 300pt;
+}
+
+#title {
+  color: #4B9BFF;
+  text-align: center;
+  font-size: 32pt;
+}
+
+#features h1 {
+  font-size: 18pt;
+}
+
+#form {
+  padding: 10pt 0;
+  font-size: 0pt;
+  vertical-align: middle;
+}
+
+#result {
   padding: 10pt;
-  background-color: #eee;
+  background-color: #ddd;
+  border: 1px #999 solid;
+  border-radius: 4pt;
+  display: none;
+}
+
+#footer {
+  color: #999;
+  font-size: 11pt;
+}
+
+#footer p {
+  margin: 2pt;
+}
+
+#footer a {
+  color: #999;
+}
+
+input {
+  font-family: "Noto Sans", NanumGothic, "나눔고딕", "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-size: 13pt;
+  box-sizing: border-box;
+  vertical-align: middle;
+  height: 30pt;
+  padding: 0 8pt;
+  margin: 0;
+  display: inline-block;
+}
+
+input[type=text] {
+  background-color: #fff;
+  border: 1px #999 solid;
+  width: 180pt;
+}
+
+input[type=submit] {
+  background-color: #eaeaea;
+  border: 1px #999 solid;
+}
+
+input[type=submit]:hover {
+  background-color: #efefef;
+}
+
+input:first-child {
+  border-top-left-radius: 4pt;
+  border-bottom-left-radius: 4pt;
+  margin-right: -1px;
+}
+
+input:last-child {
+  border-top-right-radius: 4pt;
+  border-bottom-right-radius: 4pt;
 }
