@@ -3,10 +3,15 @@ var generator = require('./lib/generator.js');
 var db = require('./lib/db.js');
 var express = require('express');
 var serveStatic = require('serve-static');
+var path = require('path');
+var favicon = require('serve-favicon');
 
 var app = express();
 
 generator.prepare(function() {
+  app.set('views', path.join(__dirname, 'views'));
+  app.set('view engine', 'ejs');
+  app.use(favicon(__dirname + '/public/favicon.ico'));
   app.all('/generate/:pattern?', function(req, res, next) {
     var pattern = req.params.pattern || 'an';
     var results = [];
@@ -22,6 +27,8 @@ generator.prepare(function() {
       res.sendStatus(400);
       return;
     }
+    var pattern = /([a-z]:)?\/\//;
+    if(!pattern.test(original)) original = "http://"+original;
     db.queryByUrl(original, function(originEntry, err) {
       if(originEntry) {
         res.send(config.domain+originEntry.shorten);
@@ -52,7 +59,20 @@ generator.prepare(function() {
       res.redirect(entry.original);
     });
   });
-  app.use(new serveStatic('./public'));
-  app.listen(config.port);
-  console.log('Server started');
+  app.use(new serveStatic(path.resolve(__dirname, 'public')));
+  app.use(function(req, res, next) {
+    res.status(404);
+    res.render('404');
+  });
+  // error handlers
+  app.use(function(err, req, res, next) {
+    res.status(500);
+    res.render('500');
+  });
+  if(require.main == module) {
+    app.listen(config.port);
+    console.log('Server started');
+  }
 });
+
+module.exports = app;

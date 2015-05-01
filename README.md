@@ -1,4 +1,4 @@
-# MemoryShortener
+# shortly.me
 Easily memorable URL shortener
 
 # Requirements
@@ -12,10 +12,7 @@ You can grab free dictionary from [http://wordnet.princeton.edu/wordnet/download
 Download the database files, And paste all the files into ```dict``` folder.
 
 # Running
-You may need to populate the dictionary database if you are running it for the
-first time. The program should do it automatically, but you can call it manually
-if you want to. You can type ```node lib/importer.js``` to populate database.
-
-After populating the database, You can run the program with ```node index.js```.
+You need to grab the database file first. After that, you can open the server
+with ```node index.js```.
 
 The server's default port is 1337.
