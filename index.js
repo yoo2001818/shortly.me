@@ -64,7 +64,6 @@ generator.prepare(function() {
     res.status(404);
     res.render('404');
   });
-  // error handlers
   app.use(function(err, req, res, next) {
     res.status(500);
     res.render('500');

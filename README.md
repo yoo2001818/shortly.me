@@ -8,7 +8,7 @@ Easily memorable URL shortener
 
 ## Grabbing dictionary
 I didn't include dictionary DB in this repositiory.
-You can grab free dictionary from [http://wordnet.princeton.edu/wordnet/download/current-version/](Here).
+You can grab free dictionary from [Here](http://wordnet.princeton.edu/wordnet/download/current-version/).
 Download the database files, And paste all the files into ```dict``` folder.
 
 # Running
