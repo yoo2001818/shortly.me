@@ -1,5 +1,8 @@
-{
-  "database": "mongodb://localhost/test",
+module.exports = {
+  "database": {
+    dialect: 'sqlite',
+    storage: 'database.sqlite'
+  },
   "port": 1337,
   "dictionary": {
     "directory": "dict",
@@ -19,4 +22,4 @@
     ]
   },
   "domain": "http://example.com/"
-}
+};

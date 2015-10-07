@@ -20,6 +20,10 @@
     "carrier": "^0.1.14",
     "express": "^4.12.3",
     "mongoose": "^4.0.2",
+    "pg": "^4.4.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.11.0",
+    "serve-favicon": "^2.3.0",
     "serve-static": "^1.9.2"
   }
 }

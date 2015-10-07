@@ -1,0 +1,10 @@
+web:
+  build: .
+  links:
+    - postgres
+  environment:
+    VIRTUAL_HOST: shortly.me
+postgres:
+  image: yoo2001818/armv7-postgresql
+  environment:
+    POSTGRES_PASSWORD: shortlymepostgres
